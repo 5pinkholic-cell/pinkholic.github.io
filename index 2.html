@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    background:#fff;
+    font-family:Arial,sans-serif;
+    color:#222;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+    letter-spacing:5px;
+}
+
+header p{
+    color:#777;
+}
+
+.gallery{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding-bottom:50px;
+}
+
+.gallery img{
+    width:100%;
+    display:block;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.02);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
