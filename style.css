@@ -1,35 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    background:#ffffff;
+    background:#5b5656;
     font-family:Arial,sans-serif;
-    color:#222;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
 }
 
-header{
-    text-align:center;
-    padding:60px 20px;
+/* 제목 */
+
+.title{
+    position:absolute;
+    top:50px;
+    left:60px;
+    color:#f6c8dc;
 }
 
-header h1{
-    font-size:42px;
-    margin:0;
+.title h1{
+    font-size:55px;
+    letter-spacing:8px;
 }
 
-.gallery{
-    width:90%;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+.title p{
+    color:white;
+    margin-top:10px;
+    font-size:18px;
 }
 
-.gallery img{
+/* 브라우저 창 */
+
+.window{
+    position:absolute;
+    width:420px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+    overflow:hidden;
+}
+
+/* 창 위치 */
+
+.window1{
+    top:170px;
+    left:70px;
+}
+
+.window2{
+    top:260px;
+    right:70px;
+}
+
+.window3{
+    bottom:70px;
+    left:170px;
+}
+
+/* 상단바 */
+
+.topbar{
+    background:#f6c8dc;
+    height:38px;
+    display:flex;
+    align-items:center;
+    padding:0 15px;
+}
+
+/* 버튼 */
+
+.buttons{
+    display:flex;
+    gap:8px;
+}
+
+.buttons span{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+.red{
+    background:#ff5f57;
+}
+
+.yellow{
+    background:#febc2e;
+}
+
+.green{
+    background:#28c840;
+}
+
+/* 주소창 */
+
+.address{
+    margin-left:20px;
+    flex:1;
+    height:18px;
+    background:white;
+    border-radius:20px;
+}
+
+/* 사진 */
+
+.content img{
     width:100%;
-    border-radius:10px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#888;
+    display:block;
 }
